@@ -1,0 +1,107 @@
+{\rtf1\ansi\ansicpg936\cocoartf1318\cocoasubrtf140
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red164\green8\blue0;\red180\green0\blue98;\red68\green137\blue147;
+\red46\green13\blue110;\red186\green0\blue17;\red92\green38\blue153;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18280\viewh11500\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 Day14\
+\'d7\'f7\'d2\'b5\'a3\'ba\
+1. \'ca\'b5\'cf\'d6TRCategoryViewController.h/.m/.xib\
+   1) .xib: \'c1\'bd\'b8\'f6\'b5\'c8\'bf\'ed\'b5\'c4table view\
+    2)\'c1\'ac\'cf\'df\'c1\'bd\'b8\'f6table view\
+2. \'ca\'fd\'be\'dd\'c0\'b4\'d4\'b4\'a3\'ba[TRMetaDataTool categories];\
+3. dataSource/delegate\'d0\'ad\'d2\'e9\'b7\'bd\'b7\'a8\
+\
+\'d0\'c2\'c4\'da\'c8\'dd\
+\cf2 \'cd\'c5\'b9\'baV5\'a3\'ba\cf0 \
+1. \'d4\'daTRSortViewController: \
+1\'a3\'a9\'c0\'fd\'c8\'e7\'a3\'baTRSortViewController: \'bc\'db\'b8\'f1\'d7\'ee\'b5\'cd \'a1\'aa> \'b7\'a2\'cb\'cd\'cd\'a8\'d6\'aa(\'b2\'ce\'ca\'fd\'a3\'ba\'d1\'a1\'d6\'d0\'b5\'c4\'c4\'c7\'b8\'f6\'c5\'c5\'d0\'f2\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3 )\
+2\'a3\'a9TRMainCollectionViewController: \'b7\'a2\'cb\'cd\'c7\'eb\'c7\'f3(button.tag)\
+params[@\'a1\'b0sort\'a1\'b1] \'a1\'aa> \'bc\'e0\'cc\'fd\'cd\'a8\'d6\'aa\
+2.\'d4\'daTRCategoryViewController.m\'b5\'c4
+\f1\fs68 \CocoaLigature0 didSelectRowAtIndexPath
+\f0\fs72 \CocoaLigature1 \'b7\'bd\'b7\'a8\'d6\'d0\'a3\'ac\'cc\'ed\'bc\'d3\'b7\'a2\'cb\'cd\'cd\'a8\'d6\'aa\'b5\'c4\'c2\'df\'bc\'ad\
+1) \'d4\'da
+\f1\fs68 \cf3 \CocoaLigature0 if\cf0  (tableView == \cf3 self\cf0 .\cf4 mainTableView\cf0 )
+\f0 \'d3\'ef\'be\'e4\'d6\'d0\'a3\'ac\'d6\'bb\'b7\'a2\'cb\'cd\'d7\'f3\'b1\'df\'b1\'ed\'b5\'c4\'b7\'d6\'c0\'e0\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3
+\fs72 \CocoaLigature1 \
+2) \'d4\'da
+\f1\fs68 \cf3 \CocoaLigature0 else
+\f0 \cf0 \'d3\'ef\'be\'e4\'d6\'d0\'a3\'ac\'b7\'a2\'cb\'cd\'d7\'f3\'b1\'df\'d1\'a1\'d6\'d0\'b5\'c4\'b7\'d6\'c0\'e0\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3\'ba\'cd\'d3\'d2\'b1\'df\'d1\'a1\'d6\'d0\'b5\'c4\'d7\'d3\'b7\'d6\'c0\'e0\'b5\'c4\'d7\'d6\'b7\'fb\'b4\'ae\
+3) \'d4\'da\'d6\'f7\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'b5\'c4
+\f1 setUpListenEvents
+\f0 \'b7\'bd\'b7\'a8\'d6\'d0\'a3\'ac\'cc\'ed\'bc\'d3\'b7\'d6\'c0\'e0\'b5\'c4\'bc\'e0\'cc\'fd\'ca\'c2\'bc\'fe
+\fs72 \CocoaLigature1 \
+3.\'d4\'da\'d6\'f7\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'b5\'c4
+\f1\fs68 \CocoaLigature0 loadNewDeals
+\f0 \'b7\'bd\'b7\'a8\'a3\'ac\'cc\'ed\'bc\'d3\'b7\'a2\'cb\'cd\'b2\'ce\'ca\'fd\'a3\'ba
+\f1 \
+1) params[@\'93sort\'94];\
+2) params[@\'93city\'94](
+\f0 \'c4\'ac\'c8\'cf\'b8\'f8\'b6\'a8
+\f1 city
+\f0 \'ce\'aa\'b1\'b1\'be\'a9\'a3\'ac\'c8\'e7\'b9\'fb\'b2\'bb\'b4\'ab\'b5\'c4\'bb\'b0
+\f1 );\
+3
+\f0 \'a3\'a9
+\f1 params[@\'93category\'94];
+\f0\fs72 \CocoaLigature1 \
+4.\'bd\'ab\'b7\'a2\'cb\'cd\'b2\'ce\'ca\'fd\'b1\'e0\'c2\'eb\'d7\'aa\'b3\'c9\'d6\'d0\'ce\'c4\
+1) \'cd\'cf\'d7\'a7Foundation+Log.m\'ce\'c4\'bc\'fe\'b5\'bd\'cf\'ee\'c4\'bf\'b9\'a4\'b3\'cc\'cf\'c2\
+2\'a3\'a9\'d4\'da\'d6\'f7\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'b5\'c4
+\f1\fs68 \CocoaLigature0 loadNewDeals
+\f0 \'b7\'bd\'b7\'a8\'cc\'ed\'bc\'d3\'d2\'bb\'b8\'f6
+\f1 log
+\f0 \'d3\'ef\'be\'e4\'a3\'ba
+\f1     \
+\cf5 NSLog\cf0 (\cf6 @"
+\f0 \'c7\'eb\'c7\'f3\'b5\'c4\'b2\'ce\'ca\'fd\'a3\'ba
+\f1 %@"\cf0 , params.\cf7 allValues\cf0 );\
+\
+\
+
+\f0 \'cd\'c5\'b9\'ba
+\f1 V6:\
+
+\f0\fs72 \CocoaLigature1 1.\'c7\'f8\'d3\'f2\'ca\'d4\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7TRRegionViewController.m\'d6\'d0\'b5\'c4
+\f1\fs68 \CocoaLigature0 didSelectRowAtIndexPath
+\f0 \'b7\'bd\'b7\'a8\'d6\'d0
+\fs72 \CocoaLigature1 \'b7\'a2\'cb\'cd\'cd\'a8\'d6\'aa\
+1) \'d4\'da
+\f1\fs68 \cf3 \CocoaLigature0 if\cf0  (tableView == \cf3 self\cf0 .\cf4 mainTableView\cf0 )
+\f0 \'d3\'ef\'be\'e4\'d6\'d0\'a3\'ac\'b7\'a2\'cb\'cd\'d7\'f3\'b1\'df\'d1\'a1\'d6\'d0\'b5\'c4\'c7\'f8\'d3\'f2\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3
+\fs72 \CocoaLigature1 \
+2) \'d4\'daelse\'b7\'bd\'b7\'a8\'d6\'d0\'a3\'ac\'b7\'a2\'cb\'cd\'d7\'f3\'b1\'df\'d1\'a1\'d6\'d0\'b5\'c4\'c7\'f8\'d3\'f2\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3\'ba\'cd\'d3\'d2\'b1\'df\'d1\'a1\'d6\'d0\'b5\'c4\'c7\'f8\'d3\'f2\'d7\'d6\'b7\'fb\'b4\'ae
+\f1\fs68 \CocoaLigature0 \
+2.CollectionCell size
+\f0 \'a3\'ba\'d0\'e8\'d2\'aa\'d0\'de\'b8\'c4Flow Layout\'d6\'d0\'b5\'c4size
+\f1 \
+3.
+\f0 \'bd\'ab\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4
+\f1 TRCollectionViewCell
+\f0 .xib\'d6\'d0\'b5\'c4
+\f1 6
+\f0 \'b8\'f6\'bf\'d8\'bc\'fe\'c1\'ac\'cf\'df\'b5\'bd
+\f1 TRCollectionViewCell.m
+\f0 \'d6\'d0
+\f1 \
+4.
+\f0 \'d4\'da
+\f1 TRCollectionViewCell.h
+\f0 \'d6\'d0\'c9\'f9\'c3\'f7
+\f1 TRDeal
+\f0 \'ca\'f4\'d0\'d4
+\f1 \
+5.TRCollectionViewCell.m
+\f0 \'d6\'d0\'d6\'d8\'d0\'b4
+\f1 setDeal
+\f0 \'b7\'bd\'b7\'a8
+\fs72 \CocoaLigature1 \
+\
+\
+\
+\
+\
+\
+}

@@ -1,0 +1,146 @@
+{\rtf1\ansi\ansicpg936\cocoartf1318\cocoasubrtf140
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red92\green38\blue153;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19480\viewh11700\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 \'bb\'d8\'b9\'cb\'a3\'ba
+\f1 \
+1.
+\f0 \'b4\'fa\'c2\'eb\'ca\'b5\'cf\'d6\'d7\'d4\'b6\'af\'b2\'bc\'be\'d6
+\f1 \
+		1.1
+\f0 \'cd\'f2\'c4\'dc\'b9\'ab\'ca\'bd
+\f1 \
+				view1.attr1<relation>view2.attr2*multiplier+constant\
+				button1.left=view.left*1+20\
+		1.2 VFL \
+				|-20-[view1]-[view2(view1)]-20-|\
+				V:|-[view1]\
+\
+		1.3 Size  Classes\
+				
+\f0 \'bd\'ab\'cb\'f9\'d3\'d0\'c9\'e8\'b1\'b8\'b5\'c4\'c6\'c1\'c4\'bb\'b7\'d6\'c0\'e0\'a3\'ac\'ce\'aa\'d5\'e2\'bc\'b8\'b8\'f6\'b2\'bb\'cd\'ac\'b5\'c4\'c0\'e0\'b1\'f0\'b7\'d6\'b1\'f0\'c9\'e8\'bc\'c6\'bd\'e7\'c3\'e6\'a3\'ac\'c8\'bb\'ba\'f3\'a3\'ac\'d7\'ee\'d6\'d5\'d3\'c9\'cf\'b5\'cd\'b3\'b8\'f9\'be\'dd\'ca\'b5\'bc\'ca\'d4\'cb\'d0\'d0\'b5\'c4\'c9\'e8\'b1\'b8\'c6\'c1\'c4\'bb\'d6\'d6\'c0\'e0\'a3\'ac\'be\'f6\'b6\'a8\'d1\'a1\'d4\'f1\'c4\'c4\'d2\'bb\'b8\'f6\'c9\'e8\'bc\'c6\'b5\'c4\'bd\'e7\'c3\'e6\
+\
+	\
+2.\'b6\'af\'bb\'ad\
+	2.1 UIImage\'c0\'e0\
+	2.2 NSTimer\
+	2.3 \'d7\'a8\'d2\'b5\'b6\'af\'bb\'ad\'d0\'a7\'b9\'fb UIView\
+			\'c9\'e8\'b6\'a8\'b6\'af\'bb\'ad\'b5\'c4\'ca\'b1\'b3\'a4\'a1\'a2\'b6\'af\'bb\'ad\'bd\'e1\'ca\'f8\'ca\'b1\'ca\'d3\'cd\'bc\'b5\'c4\'ca\'f4\'d0\'d4\'d7\'b4\'cc\'ac\
+\
+\'d0\'e8\'c7\'f3\'a3\'ba\'cd\'cf\'b6\'af\'ca\'d3\'cd\'bc\'cb\'c9\'ca\'d6\'ba\'f3\'a3\'ac\'d7\'d4\'b6\'af\'bb\'d8\'b5\'af\'b5\'bd\'d4\'ad\'ca\'bc\'ce\'bb\'d6\'c3\
+\
+\
+\'bd\'f1\'cc\'ec\'a3\'ba\
+\
+1.Core Animation				1.1 \'ca\'c7\'ca\'b2\'c3\'b4\'a3\'bf\
+				\'ca\'c7\'d2\'bb\'b8\'f6\'cd\'bc\'d0\'ce\'e4\'d6\'c8\'be\'ba\'cd\'b6\'af\'bb\'ad\'b5\'c4\'b5\'d7\'b2\'e3\'bf\'f2\'bc\'dc\'a3\'ac\'d3\'c3\'d3\'daiOS\'ba\'cdMac OS X\
+	\
+		1.2 \'c4\'dc\'b8\'c9\'ca\'b2\'c3\'b4\'a3\'bf\
+				a\'a1\'a3\'bf\'c9\'d2\'d4\'cc\'e1\'b9\'a9\'b8\'fc\'b6\'e0\'b8\'fc\'c7\'bf\'b4\'f3\'b5\'c4\'cd\'bc\'d0\'ce\'e4\'d6\'c8\'be\'a3\'a8\'cf\'d4\'ca\'be\'a3\'a9\'d0\'a7\'b9\'fb\
+				b\'a1\'a3\'bf\'c9\'d2\'d4\'cc\'e1\'b9\'a9\'d7\'a8\'d2\'b5\'bc\'b6\'b5\'c4\'b6\'af\'bb\'ad\'d0\'a7\'b9\'fb\
+				c\'a1\'a3\'ca\'c7\'b8\'df\'b2\'e3\'cd\'bc\'d0\'ce\'bc\'bc\'ca\'f5\'b5\'c4\'bb\'f9\'b4\'a1\
+\
+		1.3 \'c8\'e7\'ba\'ce\'ca\'b9\'d3\'c3Core Animation?\
+				 \'cd\'a8\'b9\'fd\'b6\'d4\'d2\'bb\'b8\'f6\'cc\'d8\'ca\'e2\'b5\'c4\'c0\'e0\'d0\'cd  CALayer \'bd\'f8\'d0\'d0\'b1\'e0\'b3\'cc\'c0\'b4\'ca\'b5\'cf\'d6\'b5\'c4\
+\
+		1.4 \'b6\'d4CALayer\'b5\'c4\'b1\'e0\'b3\'cc\'b7\'d6\'c0\'e0\
+				a\'a1\'a3\'b6\'d4\'d2\'d1\'be\'ad\'b4\'e6\'d4\'da\'c1\'cb\'b5\'c4UIView\'b5\'c4layer\'bd\'f8\'d0\'d0\'d0\'de\'b8\'c4\'b1\'e0\'b3\'cc\
+						step1\'a3\'ba\'cd\'a8\'b9\'fdUIView\'b5\'c4layer\'ca\'f4\'d0\'d4\'b5\'c3\'b5\'bd\'b5\'d7\'b2\'e3\'b5\'c4UILayer\'b6\'d4\'cf\'f3\
+						step2\'a3\'ba\'b6\'d4layer\'bd\'f8\'d0\'d0\'cf\'d4\'ca\'be\'b7\'bd\'c3\'e6\'b5\'c4\'c9\'e8\'d6\'c3\
+\
+								UIView                 CALayer\
+							  frame                    frame\
+		 					  transform              transform\
+							  addSubViews      addSubLayer\
+                            \'c3\'bb\'d3\'d0\'b5\'c4\'ca\'f4\'d0\'d4        borderWidth/corner\
+\
+					\'a1\'beDemo2_CoreAnimation\'a1\'bf\
+\
+\
+				b\'a1\'a3\'d0\'c2\'bd\'a8CALayer\'a3\'ac\'d7\'f6\'c9\'e8\'bc\'c6\
+							\'d0\'c2\'bd\'a8\'b4\'f8\'d3\'d0\'cd\'bc\'c6\'ac\'b5\'c4\'b2\'e3  CALayer\
+							\'d0\'c2\'bd\'a8\'b4\'f8\'d3\'d0\'ce\'c4\'d7\'d6\'b5\'c4\'b2\'e3  CATextLayer\
+							\'d0\'c2\'bd\'a8\'b4\'f8\'d3\'d0\'cd\'bc\'d0\'ce\'b5\'c4\'b2\'e3  CAShaperLayer\
+\
+		1.5 CAAnimation\
+					\'d2\'bb\'b8\'f6\'b3\'e9\'cf\'f3\'b5\'c4\'b6\'af\'bb\'ad\'c0\'e0\'d0\'cd\'a3\'ac\'bb\'f9\'b1\'be\'b2\'bb\'d3\'c3\'a3\'ac\'b4\'f3\'b2\'bf\'b7\'d6\'c7\'e9\'bf\'f6\'d3\'c3\'cb\'fb\'b5\'c4\'d7\'d3\'c0\'e0\'a3\'acCAKeyFrameAnimation\'a3\'a8\'b9\'d8\'bc\'fc\'d6\'a1\'b6\'af\'bb\'ad\'a3\'a9\'a3\'acCABasicAnimation\'a3\'a8\'bb\'f9\'b4\'a1\'b6\'af\'bb\'ad\'a3\'a9\
+\
+				a\'a1\'a3\'b9\'d8\'bc\'fc\'d6\'a1\'b6\'af\'bb\'ad  CAKeyFrameAnimation\
+								\'d6\'f7\'d2\'aa\'ca\'b5\'cf\'d6\'b2\'e3\'b5\'c4\'ce\'bb\'d2\'c6\'d0\'a7\'b9\'fb\
+						\'b2\'bd\'d6\'e8\'a3\'ba\
+						step1\'a3\'ba\'b4\'b4\'bd\'a8\'b9\'d8\'bc\'fc\'d6\'a1\'b6\'af\'bb\'ad\
+								\'b4\'b4\'bd\'a8\'ca\'b1\'d0\'e8\'d2\'aa\'b4\'ab\'c8\'eb\'d2\'bb\'b8\'f6\'d7\'d6\'b7\'fb\'b4\'ae\'a3\'ac\'d0\'b4 position   \
+\
+						step2\'a3\'ba\'c9\'e8\'d6\'c3\'b6\'af\'bb\'ad\'ca\'f4\'d0\'d4\
+								path \'ca\'f4\'d0\'d4\'bc\'c7\'c2\'bc\'c2\'b7\'be\'b6\
+								duration \'ca\'f4\'d0\'d4\'bc\'c7\'c2\'bc\'b6\'af\'bb\'ad\'ca\'b1\'b3\'a4\
+								
+\f2\fs68 \cf2 \CocoaLigature0 removedOnCompletion
+\f0 \'c9\'e8\'d6\'c3\'b6\'af\'bb\'ad\'bd\'e1\'ca\'f8\'ca\'b1\'d2\'c6\'b3\'fd\'b6\'af\'bb\'ad
+\fs72 \cf0 \CocoaLigature1 \
+						step3\'a3\'ba\'bd\'ab\'b6\'af\'bb\'ad\'cc\'ed\'bc\'d3\'b5\'bd\'ca\'d3\'cd\'bc\'b5\'c4layer\'b2\'e3\'c9\'cf\
+								layer addAnimation:key:\
+\
+				b\'a1\'a3\'bb\'f9\'b4\'a1\'b6\'af\'bb\'ad\'a3\'a8CABaseAnimation\'a3\'a9\
+							\'bf\'c9\'d2\'d4\'ca\'b5\'cf\'d6\'cb\'f5\'b7\'c5\'a1\'a2\'d0\'fd\'d7\'aa\'a1\'a2\'cd\'b8\'c3\'f7\'b6\'c8\
+							\'b4\'b4\'bd\'a8\'ca\'b1\'b4\'ab\'c8\'eb\'d7\'d6\'b7\'fb\'b4\'aetransform  opacity\
+						step1:\'b4\'b4\'bd\'a8\'b6\'af\'bb\'ad						step2\'a3\'ba\'c9\'e8\'d6\'c3\'ca\'f4\'d0\'d4\
+								fromValue\'a3\'ba\'b6\'af\'bb\'ad\'c6\'f0\'ca\'bc\'ca\'b1\'d7\'b4\'cc\'ac\'d6\'b5\
+								toValue\'a3\'ba\'b6\'af\'bb\'ad\'bd\'e1\'ca\'f8\'ca\'b1\'d7\'b4\'cc\'ac\'d6\'b5\
+								duration\
+						step3\'a3\'ba\'b6\'af\'bb\'ad\'cc\'ed\'bc\'d3\'b5\'bdlayer\'c9\'cf\
+						\'a1\'beDemo2_CoreAnimation\'a1\'bf\
+\
+			1.6CATransform3D\'a3\'a8CALayer\'b5\'c4transform\'ca\'f4\'d0\'d4\'c0\'e0\'d0\'cd\'a3\'a9\
+					1)\'ca\'c7\'ca\'b2\'c3\'b4\'a3\'bf\'d2\'bb\'b8\'f64X4\'b5\'c4\'be\'d8\'d5\'f3\'a3\'ac\'c3\'e8\'ca\'f6\'c1\'cb\'d2\'bb\'b8\'f63D\'cd\'bc\'c6\'ac\'b1\'e4\'d0\'d4\'b5\'c4\'ca\'fd\'be\'dd\
+\
+					2\'a3\'a9\'b4\'b4\'bd\'a8\
+						CATransform3DMakeRotation/scale/Translation()\
+						CATransform3DScale/Rotate/Translate()\
+\
+					3)\'b4\'fa\'b1\'ed\'b1\'e4\'d0\'ce\'b3\'f5\'ca\'bc\'d7\'b4\'cc\'ac\'b5\'c4\'b3\'a3\'c1\'bf\'d6\'b5\
+						CATransform3DIdentity\
+\
+\
+2.UIKit Dynamic \'b6\'af\'c1\'a6\'cc\'d8\'d0\'a7\
+		2.1 \'ca\'c7\'ca\'b2\'c3\'b4\'a3\'bf\
+				\'b4\'d3iOS7\'bf\'aa\'ca\'bc\'b5\'c4\'d2\'bb\'cf\'ee\'bc\'bc\'ca\'f5\'a3\'ac\'bf\'c9\'d2\'d4\'c4\'a3\'c4\'e2\'d5\'e6\'ca\'b5\'ca\'c0\'bd\'e7\'d6\'d0\'c1\'a6\'d1\'a7\'cf\'e0\'b9\'d8\'b5\'c4\'b6\'af\'bb\'ad\'ba\'cd\'bd\'bb\'bb\'a5\'cf\'b5\'cd\'b3\'a3\'ac\'b1\'c8\'c8\'e7\'a3\'ac\'d6\'d8\'c1\'a6\'a3\'ac\'c5\'f6\'d7\'b2\'a3\'ac\'ce\'fc\'b8\'bd\
+\
+		2.2 \'ca\'b9\'d3\'c3UIKit Dynamic\'b5\'c4\'b2\'bd\'d6\'e8\
+				step1\'a3\'ba\'b4\'b4\'bd\'a8UIDynamicAnimator\'b5\'c4\'ca\'b5\'c0\'fd\
+							   \'b4\'b4\'bd\'a8\'b8\'c3\'b6\'d4\'cf\'f3\'be\'cd\'cf\'f1\'b4\'b4\'bd\'a8\'c1\'cb\'d2\'bb\'b8\'f6\'b4\'f3\'b5\'c4\'c1\'a6\'d1\'a7\'b3\'a1\'cb\'f9\'a3\'ac\'d6\'bb\'d3\'d0\'d4\'da\'d5\'e2\'b8\'f6\'bb\'b7\'be\'b3\'cf\'c2\'cc\'ed\'bc\'d3\'b5\'c4\'b8\'f7\'d6\'d6\'c1\'a6\'d1\'a7\'d0\'d0\'ce\'aa\'a3\'ac\'b2\'c5\'bb\'e1\'b1\'ed\'cf\'d6\'b3\'f6\'b2\'bb\'cd\'ac\'b5\'c4\'d0\'a7\'b9\'fb\
+				step2\'a3\'ba\'b4\'b4\'bd\'a8\'b8\'f7\'d6\'d6\'b2\'bb\'cd\'ac\'b5\'c4\'b6\'af\'c1\'a6\'d0\'d0\'ce\'aa\
+								UIGravityBehavior \'d6\'d8\'c1\'a6\'d0\'d0\'ce\'aa\
+								UICollisionBehavior\'c5\'f6\'d7\'b2\'d0\'d0\'ce\'aa\
+								UIAttachmentBehavior \'ce\'fc\'b8\'bd\'d0\'d0\'ce\'aa\
+								UIPushBehavior   \'cd\'c6\'c1\'a6\'d0\'d0\'ce\'aa\
+								UISnapBehavior  \'c9\'c1\'cb\'b8\'d0\'d0\'ce\'aa\
+								UIDynamicItemBehavior \'c3\'dc\'b6\'c8\'c4\'a6\'b2\'c1\'c1\'a6\
+				step3\'a3\'ba\'d5\'eb\'b6\'d4\'b4\'b4\'bd\'a8\'b5\'c4\'d0\'d0\'ce\'aa\'b5\'c4\'b2\'bb\'cd\'ac\'a3\'ac\'c9\'e8\'d6\'c3\'c5\'e4\'ba\'cf\'b8\'c3\'d0\'d0\'ce\'aa\'b5\'c4\'b2\'bb\'cd\'ac\'b5\'c4\'ca\'f4\'d0\'d4\
+				step4\'a3\'ba\'bd\'ab\'b4\'b4\'bd\'a8\'b5\'c4\'d0\'d0\'ce\'aa\'cc\'ed\'bc\'d3\'b5\'bdanimator\'d5\'e2\'b8\'f6\'c1\'a6\'d1\'a7\'b3\'a1\'be\'b0\'d6\'d0\
+\
+				\'a1\'beDemo3_Dynamic\'a1\'bf\
+\
+\
+\
+\
+\
+\'a1\'b6\'d2\'e2\'d6\'be\'c1\'a6\'a1\'b7\
+				\
+\
+\
+\
+\
+\
+\
+
+\f1 \
+\
+\
+\
+\
+\
+}

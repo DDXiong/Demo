@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+    <movie>
+        <name>捉妖记</name>
+        <director>许诚毅</director>
+        <poster>monster-hunt.jpg</poster>
+        <price>40</price>
+    </movie>
+    <movie>
+        <name>西游记之大圣归来</name>
+        <director>田晓鹏</director>
+        <poster>moneky-king.jpg</poster>
+        <price>70</price>
+    </movie>
+    <movie>
+        <name>煎饼侠</name>
+        <director>大鹏</director>
+        <poster>jian-bing-man.jpg</poster>
+        <price>40</price>
+    </movie>
+    <movie>
+        <name>命中注定</name>
+        <director>张皓</director>
+        <poster>only-you.jpg</poster>
+        <price>40</price>
+    </movie>
+    <movie>
+        <name>小羊肖恩</name>
+        <director>理查德</director>
+        <poster>shaun-the-sheep.jpg</poster>
+        <price>45po</price>
+    </movie>
+</movies>

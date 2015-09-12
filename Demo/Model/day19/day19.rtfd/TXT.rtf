@@ -1,0 +1,272 @@
+{\rtf1\ansi\ansicpg936\cocoartf1318\cocoasubrtf140
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red29\green133\blue25;\red110\green32\blue13;\red186\green0\blue17;
+\red168\green24\blue75;\red48\green111\blue121;\red77\green0\blue158;\red46\green13\blue110;\red180\green0\blue98;
+\red68\green137\blue147;\red134\green19\blue62;\red92\green38\blue153;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18660\viewh10040\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 Day19:\
+\'bb\'d8\'b9\'cb\'a3\'ba\
+\'c3\'fc\'c1\'ee\'d0\'d0/\'c8\'ed\'bc\'fe+ SQL\'d3\'ef\'be\'e4 \'a1\'aa> SQLite\
+Xcode \'a3\'ad\'a1\'b7 libsqlite3.0.dylib + SQL\'d3\'ef\'be\'e4 \'a1\'aa> SQLite\
+\
+Core Data:\
+Xcode \'a3\'ad\'a1\'b7Core Data\'d2\'bb\'d0\'a9\'c0\'e0   \'a1\'aa> SQLite\
+\
+\'d7\'bc\'b1\'b8\'b9\'a4\'d7\'f7\'a3\'ba\
+1. \'b4\'b4\'bd\'a8\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3\'ce\'c4\'bc\'fe.xcdatamodeld\
+2. \'cc\'ed\'bc\'d3Entity\
+3. \'b4\'b4\'bd\'a8Core Data\'d0\'e8\'d2\'aa\'b5\'c4\'d2\'bb\'d0\'a9\'c0\'e0\
+\
+\
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\fs68 \cf2 \CocoaLigature0 \'b4\'b4\'bd\'a8\'b3\'d6\'be\'c3\'bb\'af\'b4\'e6\'b4\'a2 <\'a1\'aa> 
+\f1 Documents/Model.sqlite(
+\f0 \'ca\'fd\'be\'dd\'bf\'e2\'ce\'c4\'bc\'fe
+\f1 )\
+\
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f0 \cf0 \'ca\'b9\'d3\'c3
+\f1 CoreData
+\f0 \'bd\'e2\'be\'f6\'b7\'bd\'b0\'b8\'ca\'d6\'b6\'af\'b4\'b4\'bd\'a8\'d0\'e8\'d2\'aa\'b5\'c4\'c0\'e0\'b2\'bd\'d6\'e8\'a3\'ba\cf2 \
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f1 \cf2 Demo01-CoreData
+\f0\fs72 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 1. \'b4\'b4\'bd\'a8\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3\'ce\'c4\'bc\'feModel.xcdatamodeld\'a3\'bb\'b2\'a2\'cc\'ed\'bc\'d3\'ca\'b5\'cc\'e5Entity(PersonModel); \'d4\'daPersonModel\'ca\'b5\'cc\'e5\'d6\'d0\'cc\'ed\'bc\'d3name/age/height\'c8\'fd\'b8\'f6\'ca\'f4\'d0\'d4\
+2. \'b4\'b4\'bd\'a8\'b6\'d4\'d3\'a6PersonModel\'ca\'b5\'cc\'e5\'b5\'c4\'c4\'a3\'d0\'cd\'c0\'e0(New File -> Core Data -> NSManagedObject subclass)\
+3. \'d4\'daViewController.m\'d6\'d0\'a3\'ac\'b5\'bc\'c8\'ebCoreData\'ba\'cd\'c4\'a3\'d0\'cd\'c0\'e0\'cd\'b7\'ce\'c4\'bc\'fe\
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f1\fs68 \cf3 \CocoaLigature0 #import \cf4 <CoreData/CoreData.h>\cf3 \
+#import \cf4 "PersonModel.h"
+\f0\fs72 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 4. \'b4\'b4\'bd\'a8CoreData\'d0\'e8\'d2\'aa\'b5\'c4\'c8\'fd\'b8\'f6\'d6\'f7\'d2\'aa\'b5\'c4\'c0\'e0\
+    1) 
+\f1\fs68 \CocoaLigature0 1.
+\f0 \'b4\'b4\'bd\'a8\'b1\'bb\'b9\'dc\'c0\'ed\'b6\'d4\'cf\'f3\'c9\'cf\'cf\'c2\'ce\'c4\
+    2) 
+\f1 2.
+\f0 \'b4\'b4\'bd\'a8\'b3\'d6\'be\'c3\'bb\'af\'b4\'e6\'b4\'a2\'d0\'ad\'b5\'f7\'c6\'f7
+\f1 (
+\f0 \'ba\'cd
+\f1 NSManagedObjectModel
+\f0 \'b0\'f3\'b6\'a8
+\f1 )\
+  3)3.
+\f0 \'b4\'b4\'bd\'a8\'b3\'d6\'be\'c3\'bb\'af\'b4\'e6\'b4\'a2\
+           \'b5\'da\'d2\'bb\'b8\'f6\'b2\'ce\'ca\'fd\'a3\'ba\'d6\'b8\'b6\'a8
+\f1 core data
+\f0 \'b5\'d7\'b2\'e3\'ca\'b9\'d3\'c3\'b5\'c4\'b4\'e6\'b4\'a2\'ca\'fd\'be\'dd\'b5\'c4\'b7\'bd\'ca\'bd
+\f1 \
+\pard\tx1637\pardeftab1637\pardirnatural
+\cf0      
+\f0 \'b5\'da\'b6\'fe\'b8\'f6\'b2\'ce\'ca\'fd\'a3\'ba\'c5\'e4\'d6\'c3
+\f1 sqlite
+\f0 \'b5\'c4\'b2\'ce\'ca\'fd\'c9\'e8\'d6\'c3
+\f1 ;timeout(5s);\
+     
+\f0 \'b5\'da\'c8\'fd\'b8\'f6\'b2\'ce\'ca\'fd\'a3\'ba\'ca\'fd\'be\'dd\'bf\'e2\'cb\'f9\'d4\'da\'b5\'c4\'b1\'be\'b5\'d8\'b5\'c4
+\f1 url(Documnets/Model.sqlite)\
+  4) 4.
+\f0 \'bd\'ab\'b3\'d6\'be\'c3\'bb\'af\'b4\'e6\'b4\'a2\'d0\'ad\'b5\'f7\'c6\'f7\'ba\'cd\'b1\'bb\'b9\'dc\'c0\'ed\'b6\'d4\'cf\'f3\'c9\'cf\'cf\'c2\'ce\'c4\'bd\'f8\'d0\'d0\'b0\'f3\'b6\'a8\
+\
+5. \'d4\'dastoryboard\'c9\'cf\'cc\'ed\'bc\'d3\'cb\'c4\'b8\'f6\'b0\'b4\'c5\'a5\'a3\'ac\'b7\'d6\'b1\'f0\'b6\'d4\'d3\'a6\'d3\'da\'d4\'f6\'a1\'a2\'c9\'be\
+\'b8\'c4\'ba\'cd\'b2\'e9\
+1\'a3\'a9  \cf5 \'b2\'e5\'c8\'eb\'b2\'d9\'d7\'f7\cf0 \
+  1.1\'a3\'a9\'cd\'a8\'b9\'fdinsert\'b7\'bd\'b7\'a8\'d6\'b1\'bd\'d3\'bb\'f1\'c8\'a1\'b6\'d4\'d3\'a6Entity\'b5\'c4\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3\'a3\'bb\'c9\'e8\'d6\'c3\'ca\'f4\'d0\'d4\'d6\'b4\'d0\'d0\'b2\'e5\'c8\'eb\'b2\'d9\'d7\'f7\'a3\'ba\
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f1 \cf6 PersonModel\cf0  *personModel = [\cf7 NSEntityDescription\cf0  \cf8 insertNewObjectForEntityForName\cf0 :\cf4 @"PersonModel"\cf0  \cf8 inManagedObjectContext\cf0 :\cf9 self\cf0 .\cf10 context\cf0 ];\
+ 1.2
+\f0 \'a3\'a9\'ca\'b9\'d3\'c3\'c9\'cf\'cf\'c2\'ce\'c4\'b5\'c4save\'b2\'d9\'d7\'f7\'bd\'ab\'b2\'e5\'c8\'eb\'b5\'c4\'ca\'fd\'be\'dd\'b1\'a3\'b4\'e6\'d4\'da\'ca\'fd\'be\'dd\'bf\'e2\'d6\'d0\
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f1 \cf0 [\cf9 self\cf0 .\cf10 context\cf0  \cf8 save\cf0 :&error];\
+\
+\cf5 2
+\f0 \cf5 \'a3\'a9\'b2\'e9\'d1\'af\'b2\'d9\'d7\'f7
+\f1 \cf0 \
+  2.1) 
+\f0 \'d5\'eb\'b6\'d4
+\f1 Entity
+\f0 \'b4\'b4\'bd\'a8
+\f1 requ
+\f0 e
+\f1 st
+\f0 \'b6\'d4\'cf\'f3
+\f1 \
+  \cf7 NSFetchRequest\cf0  *request = [\cf7 NSFetchRequest\cf0  \cf8 fetchRequestWithEntityName\cf0 :\cf4 @"PersonModel"\cf0 ];\
+  2.2) 
+\f0 \'cd\'a8\'b9\'fd\'c9\'cf\'cf\'c2\'ce\'c4\'b6\'d4\'cf\'f3\'a3\'ac\'d6\'b4\'d0\'d0request\
+     
+\f1 \cf7 NSArray\cf0  *array = [\cf9 self\cf0 .\cf10 context\cf0  \cf8 executeFetchRequest\cf0 :request \cf8 error\cf0 :&error];\
+\
+\cf11 3
+\f0 ) \'b8\'fc\'d0\'c2\'b2\'d9\'d7\'f7\
+\pard\tx1637\pardeftab1637\pardirnatural
+\cf0    3.1\'a3\'a9\'ca\'d7\'cf\'c8\'bb\'f1\'c8\'a1\'cf\'eb\'d2\'aa\'b8\'fc\'d0\'c2\'b5\'c4\'c4\'c7\'d0\'a9\'bc\'cd\'c2\'bc\
+   
+\f1     \cf7 NSFetchRequest\cf0  *request = [\cf7 NSFetchRequest\cf0  \cf8 fetchRequestWithEntityName\cf0 :\cf4 @"PersonModel"\cf0 ];\
+    \cf7 NSArray\cf0  *array = [\cf9 self\cf0 .\cf10 context\cf0  \cf8 executeFetchRequest\cf0 :request \cf8 error\cf0 :&error];
+\f0 \
+   3.2\'a3\'a9\'bd\'ab\'b7\'b5\'bb\'d8\'b5\'c4\'ca\'fd\'d7\'e9\'ca\'fd\'be\'dd\'d1\'ad\'bb\'b7\'b8\'fc\'d0\'c2\'b3\'c9\'d2\'aa\'b8\'fc\'d0\'c2\'b5\'c4\'b6\'d4\'cf\'f3\
+        
+\f1  \cf9 for\cf0  (\cf6 PersonModel\cf0  *model \cf9 in\cf0  array) \{\
+        model.\cf10 name\cf0  = \cf4 @"Shirley"\cf0 ;\
+    \}\
+ 3.3) 
+\f0 \'ca\'b9\'d3\'c3\'c9\'cf\'cf\'c2\'ce\'c4\'bd\'ab\'b8\'fc\'d0\'c2\'ba\'f3\'b5\'c4\'ca\'fd\'be\'dd\'d0\'b4\'c8\'eb\'ca\'fd\'be\'dd\'bf\'e2\'d6\'d0\
+\
+\cf11 4\'a3\'a9\'c9\'be\'b3\'fd\'bc\'cd\'c2\'bc\
+  \cf0 4.1) \'ca\'d7\'cf\'c8\'bb\'f1\'c8\'a1\'d2\'aa\'c9\'be\'b3\'fd\'b5\'c4\'c4\'c7\'d0\'a9\'bc\'cd\'c2\'bc\cf11 \
+    
+\f1 \cf0  \cf7 NSFetchRequest\cf0  *request = [\cf7 NSFetchRequest\cf0  \cf8 fetchRequestWithEntityName\cf0 :\cf4 @"PersonModel"\cf0 ];\
+    \cf7 NSArray\cf0  *array = [\cf9 self\cf0 .\cf10 context\cf0  \cf8 executeFetchRequest\cf0 :request \cf8 error\cf0 :&error];
+\f0 \cf11 \
+  \cf0 4.2) \'ca\'b9\'d3\'c3\'c9\'cf\'cf\'c2\'ce\'c4\'d1\'ad\'bb\'b7\'c9\'be\'b3\'fd\'ca\'fd\'d7\'e9\'d6\'d0\'b5\'c4\'ca\'fd\'be\'dd\cf11 \
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f1 \cf0     \cf9 for\cf0  (\cf6 PersonModel\cf0  *model \cf9 in\cf0  array) \{\
+        [\cf9 self\cf0 .\cf10 context\cf0  \cf8 deleteObject\cf0 :model];\
+    \}\
+ 4.3)
+\f0 \'d7\'ee\'ba\'f3\'ca\'b9\'d3\'c3\'c9\'cf\'cf\'c2\'ce\'c4\'b1\'a3\'b4\'e6\'b6\'d4\'ca\'fd\'be\'dd\'b5\'c4\'b2\'d9\'d7\'f7\
+
+\f1     [\cf9 self\cf0 .\cf10 context\cf0  \cf8 save\cf0 :&error];
+\f0\fs72 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f1\fs68 \cf2 \CocoaLigature0 Demo02-CoreData-Contact\
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f0 \cf0 \'ca\'b9\'d3\'c3
+\f1 NSFetchedController
+\f0 \'ba\'cd
+\f1 UITableView
+\f0 \'bd\'e1\'ba\'cf\'b2\'bd\'d6\'e8\'a3\'ba
+\f1 \
+1.
+\f0 \'d4\'da\'d6\'f7\'ca\'d4\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7ContactTableViewController.m\'d6\'d0\'c9\'f9\'c3\'f7\'c1\'bd\'b8\'f6\'ca\'f4\'d0\'d4\cf2 \
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f1 \cf2 //
+\f0 \'bd\'e1\'b9\'fb\'bf\'d8\'d6\'c6\'c6\'f7
+\f1 \cf0 \
+\cf9 @property\cf0  (\cf9 nonatomic\cf0 , \cf9 strong\cf0 ) \cf7 NSFetchedResultsController\cf0  *fetchedResultController;\
+\cf2 //
+\f0 \'b1\'bb\'b9\'dc\'c0\'ed\'b6\'d4\'cf\'f3\'b5\'c4\'c9\'cf\'cf\'c2\'ce\'c4
+\f1 \cf0 \
+\cf9 @property\cf0  (\cf9 nonatomic\cf0 , \cf9 strong\cf0 ) \cf7 NSManagedObjectContext\cf0  *managedObjectContext;
+\f0\fs72 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 2.\'cd\'a8\'b9\'fd\'bb\'f1\'c8\'a1UIApplication\'b6\'d4\'cf\'f3\'c0\'b4\'b3\'f5\'ca\'bc\'bb\'af
+\f1\fs68 \CocoaLigature0 managedObjectContext
+\f0 \'b6\'d4\'cf\'f3\
+3.\'b4\'b4\'bd\'a8\'bd\'e1\'b9\'fb\'bf\'d8\'d6\'c6\'c6\'f7\'b6\'d4\'cf\'f3
+\f1 fetchedResultController\
+  1)
+\f0 \'b4\'b4\'bd\'a8\'bd\'e1\'b9\'fb\'bf\'d8\'d6\'c6\'c6\'f7\'d0\'e8\'d2\'aa\'d7\'f1\'ca\'d8\'c8\'fd\'b8\'f6\'b1\'d8\'d0\'eb\'d4\'ad\'d4\'f2
+\f1 \
+\pard\tx1637\pardeftab1637\pardirnatural
+\cf2   \cf0   3.1
+\f0 ) \'b1\'d8\'d0\'eb
+\f1 1. FetchRequest
+\f0 \'b1\'d8\'d0\'eb\'ba\'cd
+\f1 sort descriptor
+\f0 \'b0\'f3\'b6\'a8
+\f1 \
+    3.2)
+\f0 \'b1\'d8\'d0\'eb
+\f1 2. NSSortDescriptor
+\f0 \'b5\'c4
+\f1 key
+\f0 \'b1\'d8\'d0\'eb\'ba\'cd\'b5\'da\'c8\'fd\'b8\'f6\'b2\'ce\'ca\'fd\'d2\'bb\'c4\'a3\'d2\'bb\'d1\'f9
+\f1 \
+    3.3)
+\f0 \'b1\'d8\'d0\'eb
+\f1 3. 
+\f0 \'d2\'bb\'b5\'a9\'b4\'b4\'bd\'a8\'cd\'ea\'b1\'cf\'a3\'ac\'d4\'cb\'d0\'d0\'b8\'c3\'b7\'bd\'b7\'a8\'a3\'ac\'be\'cd\'b2\'bb\'d4\'ca\'d0\'ed\'d0\'de\'b8\'c4
+\f1 request\
+  2)
+\f0 \'b4\'b4\'bd\'a8\'bd\'e1\'b9\'fb\'bf\'d8\'d6\'c6\'c6\'f7\'b6\'d4\'cf\'f3; \'c6\'e4\'d6\'d0nameKeyPath\'b2\'ce\'ca\'fd\'b1\'ed\'ca\'be\'b0\'b4\'d5\'d5\'b1\'ed\'b5\'c4\'c4\'c4\'c1\'d0\'c9\'e8\'d6\'c3table view\'b5\'c4section\'a3\'bb\'b5\'da\'cb\'c4\'b8\'f6\'b2\'ce\'ca\'fd\'ca\'c7\'bb\'ba\'b4\'e6\'ce\'c4\'bc\'fe\'bc\'d0\'b5\'c4\'c3\'fb\'d7\'d6\
+    
+\f1     \cf10 _fetchedResultController\cf0  = [[\cf7 NSFetchedResultsController\cf0  \cf8 alloc\cf0 ] \cf8 initWithFetchRequest\cf0 :request \cf8 managedObjectContext\cf0 :\cf9 self\cf0 .\cf10 managedObjectContext\cf0  \cf8 sectionNameKeyPath\cf0 :\cf4 @"name"\cf0  \cf8 cacheName\cf0 :\cf4 @"CacheData"\cf0 ];\
+4.
+\f0 \'b4\'b4\'bd\'a8\'cc\'ed\'bc\'d3\'ba\'c3\'d3\'d1\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7
+\f1 \cf6 AddContactViewController.h/.m/.xib\
+\pard\tx1637\pardeftab1637\pardirnatural
+\cf0 5.
+\f0 \'ca\'b5\'cf\'d6
+\f1 table view
+\f0 \'b5\'c4
+\f1 data source
+\f0 \'b5\'c4\'b7\'bd\'b7\'a8\
+6. \'ca\'b5\'cf\'d6NSFetchedResultsControllerDelegate\'d0\'ad\'d2\'e9\'b7\'bd\'b7\'a8
+\fs72 \CocoaLigature1 \
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f1\fs68 \cf2 \CocoaLigature0   1
+\f0 ) \'bd\'e1\'b9\'fb\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4\'c4\'da\'c8\'dd\'bd\'ab\'d2\'aa\'b7\'a2\'c9\'fa\'b1\'e4\'bb\'af\'b7\'bd\'b7\'a8
+\f1 \cf0 \
+- (\cf9 void\cf0 )controllerWillChangeContent:(\cf7 NSFetchedResultsController\cf0  *)controller \{\
+    [\cf9 self\cf0 .\cf12 tableView\cf0  \cf8 beginUpdates\cf0 ];\
+\}\
+\cf2   2) 
+\f0 \'bd\'e1\'b9\'fb\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4\'c4\'da\'c8\'dd\'b7\'a2\'c9\'fa\'b1\'e4\'bb\'af\'cd\'ea\'b3\'c9\'b7\'bd\'b7\'a8
+\f1 \cf0 \
+- (\cf9 void\cf0 )controllerDidChangeContent:(\cf7 NSFetchedResultsController\cf0  *)controller \{\
+    [\cf9 self\cf0 .\cf12 tableView\cf0  \cf8 endUpdates\cf0 ];\
+\}\
+  3
+\f0 ) \'b8\'f9\'be\'dd
+\f1 \cf12 NSFetchedResultsChangeType
+\f0 \cf0 \'c0\'e0\'d0\'cd\'b5\'c4\'b2\'bb\'cd\'ac\'c0\'b4\'ca\'b5\'cf\'d6
+\f1 didChangeSection
+\f0 \'d0\'ad\'d2\'e9\'b7\'bd\'b7\'a8\
+     4) \'b8\'f9\'be\'dd
+\f1 \cf12 NSFetchedResultsChangeType
+\f0 \cf0 \'c0\'e0\'d0\'cd\'b5\'c4\'b2\'bb\'cd\'ac\'c0\'b4\'ca\'b5\'cf\'d6
+\f1 didChangeObject
+\f0 \'d0\'ad\'d2\'e9\'b7\'bd\'b7\'a8\
+\
+7 \'d4\'da\'d6\'f7\'ca\'d4\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'ca\'b5\'cf\'d6addContact\'b7\'bd\'b7\'a8\'a3\'ac\'b2\'a2\'bd\'ab\'bd\'e1\'b9\'fb\'bf\'d8\'d6\'c6\'c6\'f7\'b6\'d4\'cf\'f3\'b4\'ab\'b9\'fd\'c8\'a5\
+8. \'d4\'daAddContactViewController.m\'d6\'d0\'ca\'b5\'cf\'d6clickSave\'b7\'bd\'b7\'a8\
+9 \'cd\'a8\'b9\'fd\'b4\'ab\'c8\'eb\'b5\'c4\'bd\'e1\'b9\'fb\'bf\'d8\'d6\'c6\'c6\'f7\'b6\'d4\'cf\'f3\'bb\'f1\'c8\'a1\'d0\'e8\'d2\'aa\'b2\'e5\'c8\'eb\'b5\'c4\'bf\'d5\'b5\'c4\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3\
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f1 \cf6 Contact\cf0  *contact = [\cf7 NSEntityDescription\cf0  \cf8 insertNewObjectForEntityForName\cf0 :[entityDescription \cf8 name\cf0 ] \cf8 inManagedObjectContext\cf0 :context];\
+10. 
+\f0 \'bd\'ab\'d3\'c3\'bb\'a7\'bd\'e7\'c3\'e6\'c9\'cf\'ca\'e4\'c8\'eb\'b5\'c4\'c3\'fb\'d7\'d6\'ba\'cd\'c7\'a9\'c3\'fb\'c1\'bd\'b8\'f6\'ce\'c4\'b1\'be\'a3\'ac\'b8\'b3\'d6\'b5\'b8\'f8\'b5\'da
+\f1 9
+\f0 \'b2\'bd\'bb\'f1\'c8\'a1\'b5\'c4\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3\
+11.\'ca\'b9\'d3\'c3\'c9\'cf\'cf\'c2\'ce\'c4\'b6\'d4\'cf\'f3\'b1\'a3\'b4\'e6\'ca\'fd\'be\'dd\
+12.\'d4\'da\'d6\'f7\'ca\'d4\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4viewDidLoad\'b7\'bd\'b7\'a8\'d6\'d0\'cc\'ed\'bc\'d3\'d7\'f3\'b1\'df\'b1\'e0\'bc\'aditem\
+\pard\tx1637\pardeftab1637\pardirnatural
+
+\f1 \cf0 - (\cf9 void\cf0 )viewDidLoad \{\
+\pard\tx1637\pardeftab1637\pardirnatural
+\cf2 //
+\f0 \'ca\'d6\'b6\'af\'bc\'d3\'d4\'d8\'d7\'f3\'b1\'df\'b1\'e0\'bc\'ad
+\f1 item\cf0 \
+\cf9 self\cf0 .\cf12 navigationItem\cf0 .\cf12 leftBarButtonItem\cf0  = \cf9 self\cf0 .\cf8 editButtonItem\cf0 ;   \
+\}\
+13.
+\f0 \'ca\'b5\'cf\'d6
+\f1 commitEditingStyle
+\f0 \'b5\'c4
+\f1 table view
+\f0 \'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8
+\fs72 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\
+}
